@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="idCEUsuario" class="pe.unjfsc.daw.entity.CEUsuario"></bean>
+	<bean id="idCETramite" class="pe.unjfsc.daw.entity.CETramite"></bean>
+	<bean id="idCERecibo" class="pe.unjfsc.daw.entity.CERecibo"></bean>
+
+	<bean id="idCIUsuario" class="pe.unjfsc.daw.model.impl.CDUsuario">
+		<property name="moCEUsuario" ref="idCEUsuario" />
+	</bean>
+	<bean id="idCITramite" class="pe.unjfsc.daw.model.impl.CDTramite">
+		<property name="moCETramite" ref="idCETramite" />
+	</bean>
+	<bean id="idCIRecibo" class="pe.unjfsc.daw.model.impl.CDRecibo">
+		<property name="moCERecibo" ref="idCERecibo" />
+	</bean>
+
+</beans>

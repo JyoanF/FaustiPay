@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- configuration file for LogBack (slf4J implementation) See here for more 
+	details: http://gordondickens.com/wordpress/2013/03/27/sawing-through-the-java-loggers/ -->
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+	<!-- 1.0 En general, solo DEBUG, INFO y ERROR se almacenan en diferentes 
+		archivos -->
+	<property name="log.level" value="info" />
+
+	<!-- 2.0 Cuánto tiempo permanece el archivo de registro -->
+	<property name="log.maxHistory" value="30" />
+
+	<!-- 3.0 Marque la ruta donde se guarda el registro- -->
+	<property name="log.filePath" value="/Programs/logs" />
+
+	<!-- 4.0 El formato de la pantalla de registro "% d {formato de tiempo} 
+		[% qué hilo]% - qué nivel% logger {50} (información de registro) -% msg% 
+		n" -->
+	<property name="log.pattern"
+		value="%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n" />
+
+	<!-- 5.0 El medio de la consola del appenderAppender -->
+	<appender name="console"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<!-- 6.0 el codificador es similar al diseño, el patrón define el formato 
+				de salida -->
+			<pattern>${log.pattern}</pattern>
+		</encoder>
+	</appender>
+
+	<!-- DEBUG -->
+	<appender name="debugAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!-- Ruta del archivo -->
+		<file>${log.filePath}/debug.log</file>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- Nombre de archivo -->
+			<fileNamePattern>${log.filePath}/debug/debug.%d{yyyy-MM-dd}.log.gz
+
+			</fileNamePattern>
+			<!-- Número máximo de archivos de historial guardados -->
+			<maxHistory>${log.maxHistory}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${log.pattern}</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+	<!-- INFO -->
+	<appender name="infoAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!-- Ruta del archivo -->
+		<file>${log.filePath}/info.log</file>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- Nombre de archivo -->
+			<fileNamePattern>${log.filePath}/info/info.%d{yyyy-MM-dd}.log.gz
+			</fileNamePattern>
+			<!-- Número máximo de archivos de historial guardados -->
+			<maxHistory>${log.maxHistory}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${log.pattern}</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+	<!-- ERROR -->
+	<appender name="errorAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!-- Ruta del archivo -->
+		<file>${log.filePath}/error.log</file>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- Nombre de archivo -->
+			<fileNamePattern>${log.filePath}/error/error.%d{yyyy-MM-dd}.log.gz
+			</fileNamePattern>
+			<!-- Número máximo de archivos de historial guardados -->
+			<maxHistory>${log.maxHistory}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${log.pattern}</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+	<logger name="pe.isa.evalua" level="${log.level}" additivity="true">
+		<appender-ref ref="debugAppender" />
+		<appender-ref ref="infoAppender" />
+		<appender-ref ref="errorAppender" />
+	</logger>
+
+	<!-- <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator"> 
+		<resetJUL>true</resetJUL> </contextListener> -->
+	<!-- To enable JMX Management <jmxConfigurator /> -->
+
+	<!--<logger name="org.hibernate" level="debug"/> -->
+	<!-- Uncomment and add your logger here: <logger name="org.springframework.samples.service.service" 
+		level="debug"/> -->
+
+	<root level="info">
+		<appender-ref ref="infoAppender" />
+	</root>
+</configuration>

@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap");
+
+header {
+    background-color: #007094;
+    color: white;
+    height: 90px;
+    display: inline-block;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header a {
+    color: white;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#div-header-logo {
+    float: left;
+    height: 90px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 10px;
+    max-width: 89vw;
+}
+
+#div-header-options {
+    float: right;
+    height: 90px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.d {
+    display: inline-block;
+}
+
+.b {
+    border: 1px solid black;
+}
+
+/* CSS */
+.button-23 {
+    background-color: #007094;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 5px;
+    margin: 0;
+    outline: none;
+    padding: 13px 10px;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s,
+        transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+}
+
+.button-23:active {
+    background-color: #FFFFFF;
+    transform: scale(.96);
+    color: #007094;
+}
+
+.button-23:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.evt-hover:hover {
+    transform: scale(1.05);
+    transition-duration: .35s;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+.logo_uni {
+    position: absolute;
+    margin-left: -3rem;
+    top: -24px;
+    height: 127px;
+    width: 124px;
+    background-color: #FFFF;
+    border-radius: 100px
+}
+
+.logo_uni img {
+    width: 124px;
+    height: 124px;
+}
+
+img[class=logo_faustipay] {
+    position: absolute;
+    left: 40rem;
+    width: 232px;
+    height: 93px;
+    margin-top: 20px;
+}
+
+.title_text {
+    position: absolute;
+    left: 17.2rem;
+    margin-top: 50px;
+}
+
+.title_01 {
+    margin-left: 1rem;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Adamita', sans-serif;
+}
+
+.title_02 {
+    margin-top: -20px;
+    margin-left: -6rem;
+    font-weight: 510;
+    font-size: 25px;
+    line-height: 61px;
+
+}
+
+.title_03 {
+    margin-top: -20px;
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Adamita', sans-serif;
+}
+
+.title_04 {
+    margin-top: 10px;
+    margin-left: -6px;
+    font-weight: 510;
+    font-size: 28px;
+    line-height: 65px;
+    text-decoration: underline 2px;
+}
+
+.title_05 {
+    padding-top: 50px;
+    text-transform: uppercase;
+    margin-left: -200px;
+}
+
+.datos_personales {
+    text-transform: uppercase;
+    margin-left: -200px;
+}
+
+.num {
+    display: flex;
+    margin-top: -41px;
+    margin-left: 25rem;
+
+}
+
+.num label {
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    width: 120px;
+    height: 21px;
+    border: 0px;
+}
+
+.num h4 {
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+.datos {
+    margin-top: -10px;
+    position: absolute;
+    margin-left: -200px;
+}
+
+.datos label {
+    line-height: 35px;
+    font-weight: 500;
+}
+
+label[class=text_datos] {
+    width: 291px;
+    font-weight: 500;
+    margin-left: 100px;
+    border: 0px;
+    height: 21px;
+
+}
+
+label[class=text_dni] {
+    line-height: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    height: 21px;
+    margin-top: 15px;
+    width: 291px;
+    margin-left: 245px;
+    border: 0px;
+}
+
+.container {
+    position: absolute;
+    background: rgb(98, 181, 207);
+    background: linear-gradient(180deg, rgba(176, 219, 232, 1) 6%, rgba(240, 248, 250, 1) 69%);
+    width: 852px;
+    height: 780px;
+    border-radius: 20px;
+}
+
+.escuela {
+    margin-top: -10px;
+    position: absolute;
+    margin-left: -200px;
+}
+
+.label_e {
+    line-height: 35px;
+    font-weight: 400;
+    font-size: 17px;
+    width: 291px;
+    height: 21px;
+    border: 0px;
+    margin-left: 13px;
+}
+
+.container_table {
+    position: absolute;
+    margin-top: 480px;
+    padding-left: 4.8rem;
+    width: 780px;
+}
+
+table {
+    background-color: rgb(246, 252, 253);
+    text-align: left;
+    width: 90%;
+    border-collapse: collapse;
+
+}
+
+thead {
+    border: solid 1px #d1d1d1;
+}
+
+
+th,
+td {
+    border: solid 1px #d1d1d1;
+    padding: 6px;
+}
+
+.espacio th {
+    border: solid 0px white;
+}
+
+.total {
+    padding-top: 10px;
+    padding-left: 32.5rem;
+    display: flex;
+}
+
+.total input {
+    background-color: rgb(246, 252, 253);
+    border: solid 1px #d1d1d1;
+    margin-left: 10px;
+    width: 135px;
+    height: 25px;
+}
+
+.hora_fecha{
+    margin-top: -10px;
+    display: flex;
+}
+
+#hours{
+    margin-left: 50px;
+}
+
+.cod_qr{
+    margin-top: 10px;
+}
+
+.footer_container{
+    position: relative;
+    padding: 18px;
+    margin: auto;
+    justify-content: space-between;
+    height: 60px;
+    top: 90vh;
+    background-color: #272D2F;
+    height:206px;
+}
+
+.container_logo{
+    display: flex;
+    
+}
+
+.container_logo img{
+    width: 65px;
+    height: 64px;
+    margin-top: 40px;
+}
+
+.text__logo{
+    padding-top: 9  px;
+}
+
+.container__f{
+    position: absolute;
+    display: flex;
+    color: #ffffff;
+    padding-left: 100px;
+}
+
+.informacion{
+    padding-left: 150px;
+}
+
+.informacion a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: grid;
+    margin-top: 10px;
+}
+
+.contacto{
+    padding-left: 100px;
+}
+
+.contacto p{
+    margin-top: -4px;
+}
+
+.redes-sociales img{
+    width: 36px;
+    height: 39px;
+    margin-left: 10px;
+}
+
+
+.redes-sociales .fb:hover{
+   background-color: #272D2F;
+   width: 36px;
+   height: 36px;
+   border-radius: 3.1px;
+}
+.redes-sociales .tw:hover{
+    background-color: #272D2F;
+    width: 36px;
+    height: 36px;
+    border-radius: 3.1px;
+ }
+
+ .redes-sociales .yt:hover{
+    background-color: #272D2F;
+    width: 36px;
+    height: 36px;
+    border-radius: 3.1px;
+ }
+
+ img[class=ema]:hover{
+    width: 36px;
+    height: 36px;
+    background-color: #272D2F;
+ }
+ 
+p[class=university],
+p[class=portal],
+p[class=copy]{
+    color: #FFFFFF;
+}

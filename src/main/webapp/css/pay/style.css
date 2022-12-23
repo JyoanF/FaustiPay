@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap");
+
+.nav__container{
+    background-color: #007094;
+    height: 130px;
+}
+.user__space{
+    float: right;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    border-width: 3px;
+    border-style: solid;
+    width: 300px;
+    height: 50px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 40px;
+}
+
+.logo{
+    padding-left: 50px;
+}
+
+.persona{
+    color: #FFFFFF;
+    font-size: 20px;
+
+}
+
+.user__space a{
+    background-color: #007094;
+    border: 0px;
+    width: 24px;
+    height: 19px;
+}
+
+.user__space img:hover{
+    background-color: #c0c0c0;
+}
+
+.user__space button i{
+    padding-left: 30px;
+}
+
+.body_container{
+    left: 10rem;
+    position: absolute;
+    top: 170px;
+    width: 701px;
+    display: block;
+    background-color: #ffffff;
+    padding-left: 10px;
+}
+
+.body_container p{
+    text-align: left;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.email{
+    font-size: 16px;
+    height: 42px;
+    width: 670px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #E7E7E7;
+    border-style: solid;
+    padding-left: 10px;
+}
+
+.email:placeholder-shown{
+    padding-left: 10px;
+}
+
+.nom_ape{
+    padding-top: 18px;
+}
+
+input[class=nomb],
+input[class=appa]{
+    width: 332px;
+    height: 42px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #E7E7E7;
+    border-style: solid;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+input[class=nomb],
+input[class=appa]:placeholder-shown{
+    padding-left: 10px;
+}
+
+input[class=dire-fac]{
+    width: 670px;
+    height: 42px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #E7E7E7;
+    border-style: solid;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+input[class=dire-fac]:placeholder-shown{
+    padding-left: 10px;
+}
+
+.direc-facs{
+    padding-top: 18px;
+}
+
+input[class=dire-facSe]{
+    width: 670px;
+    height: 42px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #E7E7E7;
+    border-style: solid;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+input[class=dire-facSe]:placeholder-shown{
+    padding-left: 10px;
+}
+
+.localidad{
+    padding-top: 18px;
+}
+
+input[class=local]{
+    width: 670px;
+    height: 42px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #E7E7E7;
+    border-style: solid;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+input[class=local]:placeholder-shown{
+    padding-left: 10px;
+}
+
+.container__select{
+    padding-top: 18px;
+}
+
+select[class=select]{
+    width: 225px;
+    height: 42px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #E7E7E7;
+    border-style: solid;
+    font-size: 16px;
+    color:#637381 ;
+}
+
+
+input[class= postal],
+input[class= phone]{
+    width: 218px;
+    height: 42px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #E7E7E7;
+    border-style: solid;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+input[class= postal],
+input[class= phone]:placeholder-shown{
+    padding-left: 10px;
+}
+
+
+.checkbox-text{
+    padding-top: 18px;
+}
+
+.checkbox-text label{
+    font-size: 16px;
+    color:#5d666e;
+}
+.direcciones{
+    padding-top: 18px;
+}
+
+/*footer*/
+.footer_container{
+    position: relative;
+    padding: 18px;
+    margin: auto;
+    justify-content: space-between;
+    height: 60px;
+    top: 65.5vh;
+    background-color: #272D2F;
+    height:206px;
+}
+
+.container_logo{
+    display: flex;
+    
+}
+
+.container_logo img{
+    width: 65px;
+    height: 64px;
+    margin-top: 40px;
+}
+
+.text__logo{
+    padding-top: 9  px;
+}
+.container__f{
+    position: absolute;
+    display: flex;
+    color: #ffffff;
+    padding-left: 100px;
+}
+.container_logo{
+
+}
+
+.informacion{
+    padding-left: 150px;
+}
+
+.informacion a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: grid;
+    margin-top: 10px;
+}
+
+.contacto{
+    padding-left: 100px;
+}
+
+.contacto p{
+    margin-top: -4px;
+}
+
+.redes-sociales img{
+    width: 36px;
+    height: 39px;
+    margin-left: 10px;
+}
+
+
+.redes-sociales .fb:hover{
+   background-color: #272D2F;
+   width: 36px;
+   height: 36px;
+   border-radius: 3.1px;
+}
+.redes-sociales .tw:hover{
+    background-color: #272D2F;
+    width: 36px;
+    height: 36px;
+    border-radius: 3.1px;
+ }
+
+ .redes-sociales .yt:hover{
+    background-color: #272D2F;
+    width: 36px;
+    height: 36px;
+    border-radius: 3.1px;
+ }
+
+ img[class=ema]:hover{
+    width: 36px;
+    height: 36px;
+    background-color: #272D2F;
+ }
+ 
+p[class=university],
+p[class=portal],
+p[class=copy]{
+    color: #FFFFFF;
+}
+
+
+.container_aside{
+    position: relative;
+    float: right;
+    padding-right: 30rem;
+    padding-top: 3rem;
+}
+
+p[class=p],
+p[class=title_tramite]{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[class=number_target]{
+    margin-top: 10px;
+    width: 466px;
+    height: 42px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #E7E7E7;
+    border-style: solid;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+select[class=type_tar]{
+    color:#637381 ;
+    margin-top: 10px;
+    width: 466px;
+    height: 42px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #E7E7E7;
+    border-style: solid;
+    font-size: 16px;
+    padding-left: 10px;
+}
+select[class=date_expiration],
+select[class=date_expiration_1]{
+    color:#637381 ;
+    margin-top: 10px;
+    width: 146px;
+    height: 42px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #E7E7E7;
+    border-style: solid;
+    font-size: 16px;
+    padding-left: 10px;
+}
+input[class=cvv]{
+    margin-top: 10px;
+    width: 166px;
+    height: 42px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #E7E7E7;
+    border-style: solid;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+button[class=pay_button]{
+    width: 466px;
+    height: 48px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-color: #E7E7E7;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #2685A4;
+}
+button[class=pay_button]:hover{
+    background-color: #186680;
+}
+
+.mastercast{
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 22px;
+}
+
+.visa{
+    position: absolute;
+    margin-left: -100px;
+    margin-top: 22px;
+}
+
+.icon_target{
+    position: absolute;
+    margin-left: -35px;
+    margin-top: 22px;
+}

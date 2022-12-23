@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<!-- No olvidar marcar el namespaces de context y beans -->
+	<context:component-scan base-package="pe"></context:component-scan>
+
+	<import resource="classpath:/pe/unjfsc/daw/applicationContext.xml"/>
+	
+	<!-- Configuración de bean para especificar la ubicación de las páginas 
+		de visualización y el sufijo utilizado. Example: a logical view name of 'showMessage' 
+		is mapped to '/WEB-INF/jsp/showMessage.jsp' -->
+	<bean id="idViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/html/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+</beans>
